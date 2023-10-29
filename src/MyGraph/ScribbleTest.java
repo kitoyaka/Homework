@@ -40,5 +40,6 @@ public class ScribbleTest extends Frame{
     }
     public static void main(String[] args){
         new ScribbleTest(" \"Painting\"");
+        System.out.println("Chel 1341");
     }
 }
