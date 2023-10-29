@@ -1,4 +1,6 @@
 package MyGraph;
+import org.w3c.dom.ls.LSOutput;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -40,4 +42,5 @@ public class ScribbleTest extends Frame{
     public static void main(String[] args){
         new ScribbleTest(" \"Painting\"");
     }
+    //MESUAR
 }
