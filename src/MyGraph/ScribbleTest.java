@@ -13,19 +13,20 @@ public class ScribbleTest extends Frame{
         pane.add(scr);
         Panel p = new Panel();
         add(p, BorderLayout.SOUTH);
-        Button b1= new Button("Red");
+        //Buttons
+        Button b1= new Button("Красний");
         p.add(b1);
         b1.addActionListener(scr);
-        Button b2 = new Button("Green");
+        Button b2 = new Button("Зелений");
         p.add(b2);
         b2.addActionListener(scr);
-        Button b3= new Button("Blue");
+        Button b3= new Button("Синій");
         p.add(b3);
         b3.addActionListener(scr);
-        Button b4= new Button("Black");
+        Button b4= new Button("Чорний");
         p.add(b4);
         b4.addActionListener(scr);
-        Button b5= new Button("Clean");
+        Button b5= new Button("Очистити");
         p.add(b5);
         b5.addActionListener(scr);
 
