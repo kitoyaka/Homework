@@ -13,7 +13,6 @@ public class ScribbleTest extends Frame{
         pane.add(scr);
         Panel p = new Panel();
         add(p, BorderLayout.SOUTH);
-        //Buttons
         Button b1= new Button("Красний");
         p.add(b1);
         b1.addActionListener(scr);
@@ -39,6 +38,6 @@ public class ScribbleTest extends Frame{
         setVisible(true);
     }
     public static void main(String[] args){
-        new ScribbleTest(" \"Painting\"");
+        new ScribbleTest(" \"Малювання\"");
     }
 }

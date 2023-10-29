@@ -1,9 +1,5 @@
 package MyGraph;
 
-<<<<<<< HEAD
-public class Scribble {
-}
-=======
 import java.awt.*;
 import java.awt.event.*;
 
@@ -63,4 +59,3 @@ public class Scribble extends Component implements ActionListener, MouseListener
     public void mouseMoved(MouseEvent e) {
     }
 }
->>>>>>> DIMA
