@@ -59,3 +59,4 @@ public class Scribble extends Component implements ActionListener, MouseListener
     public void mouseMoved(MouseEvent e) {
     }
 }
+// commit
