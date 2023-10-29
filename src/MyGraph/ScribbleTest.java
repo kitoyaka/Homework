@@ -40,5 +40,4 @@ public class ScribbleTest extends Frame{
     public static void main(String[] args){
         new ScribbleTest(" \"Painting\"");
     }
-//hui
 }
