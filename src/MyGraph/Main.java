@@ -41,8 +41,3 @@ public class ScribbleTest extends Frame{
         new ScribbleTest(" \"Painting\"");
     }
 }
-class Scribble extends Component implements  ActionListener, MouseListener, MouseMotionListener{
-
-    private static final long serialVersionUID = 1L;
-
-}
