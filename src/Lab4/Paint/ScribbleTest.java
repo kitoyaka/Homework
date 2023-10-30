@@ -1,4 +1,5 @@
-package MyGraph;
+package Lab4.Paint;
+
 import java.awt.*;
 import java.awt.event.*;
 
