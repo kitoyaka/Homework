@@ -39,7 +39,6 @@ public class ScribbleTest extends Frame{
         setVisible(true);
     }
     public static void main(String[] args){
-        new ScribbleTest(" \"Painting\"");
-        System.out.println("Chel 1341");
+        new ScribbleTest(" \"Малювання\"");
     }
 }
