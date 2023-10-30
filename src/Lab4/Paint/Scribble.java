@@ -1,4 +1,4 @@
-package Lab4Paint;
+package Lab4.Paint;
 
 import java.awt.*;
 import java.awt.event.*;

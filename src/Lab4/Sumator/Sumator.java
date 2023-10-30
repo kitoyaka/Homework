@@ -1,4 +1,4 @@
-package Lab4Sumator;
+package Lab4.Sumator;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

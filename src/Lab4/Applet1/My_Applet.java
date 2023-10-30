@@ -1,4 +1,4 @@
-package Lab4Applet1;
+package Lab4.Applet1;
 
 import javax.swing.*;
 import java.awt.*;
