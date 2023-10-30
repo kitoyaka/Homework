@@ -11,7 +11,7 @@ public class My_Applet extends JFrame{
     public static void main(String[] args) {
         My_Applet frame = new My_Applet();
         frame.setSize(200,100);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//2f
         frame.setVisible(true);
     }
 }
