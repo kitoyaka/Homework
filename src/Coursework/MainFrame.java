@@ -18,7 +18,7 @@ public class MainFrame extends JFrame {
     }
     Image firstStokPicture;
     public void firstPhoto(){
-        String firstStokPicturePath = "C:/Users/rigry/IdeaProjects/Homework/photos/firstStokPhoto.png";
+        String firstStokPicturePath = "photos/firstStokPhoto.png";
         try {
             firstStokPicture = ImageIO.read(new File(firstStokPicturePath));
         }
