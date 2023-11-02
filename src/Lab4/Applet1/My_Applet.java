@@ -1,5 +1,4 @@
 package Lab4.Applet1;
-
 import javax.swing.*;
 import java.awt.*;
 

@@ -19,12 +19,12 @@ public class Sumator extends JFrame {
         button();
     }
     public void pole1(){
-        textField1 = new JTextField("Введіть значення");
+        textField1 = new JTextField("");
         textField1.setBounds(10,10,120,20);
         add(textField1);
     }
     public void pole2(){
-        textField2 = new JTextField("Введіть значення");
+        textField2 = new JTextField("");
         textField2.setBounds(10,35,120,20);
         add(textField2);
     }
