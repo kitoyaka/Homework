@@ -1,3 +1,5 @@
+package Lab5;
+
 import java.awt.Scrollbar;
 import java.awt.*;
 import java.awt.event.*;
