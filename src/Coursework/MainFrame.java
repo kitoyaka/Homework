@@ -30,6 +30,7 @@ public class MainFrame extends JFrame {
             getGraphics().drawString("Зображення не знайдено", 110,120);
         }
     }
+    //dsd
     public void leftLever(){
         JButton lever1 = new JButton(" ");
         lever1.setBounds(370,140, 35, 75);
