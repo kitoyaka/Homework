@@ -37,10 +37,10 @@ class ScrollTest extends Frame{
         sbRed.setBounds(40,30,20,200);
         p.add(sbRed);
         sbGreen.setBackground(Color.green);
-        sbGreen.setBounds(40,30,20,200);
+        sbGreen.setBounds(70,30,20,200);
         p.add(sbGreen);
         sbBlue.setBackground(Color.blue);
-        sbBlue.setBounds(40,30,20,200);
+        sbBlue.setBounds(100,30,20,200);
         p.add(sbBlue);
         Label lp = new Label("Example");
         lp.setBounds(250,50,120,30);
