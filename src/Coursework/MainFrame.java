@@ -33,7 +33,7 @@ public class MainFrame extends JFrame {
                 switchImage = !switchImage; // Переключаем значение для смены изображения
                 if (switchImage) {
                     try {
-                        firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverRedOff.png"));
+                        firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverRedOff.png"));//путь до фотки яка нам треба
                     } catch (IOException ex) {
                         ex.printStackTrace();
                         System.out.println("No photo");
