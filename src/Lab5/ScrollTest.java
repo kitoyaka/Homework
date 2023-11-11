@@ -1,5 +1,4 @@
 package Lab5;
-
 import java.awt.Scrollbar;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,7 +10,6 @@ class ScrollTest extends Frame{
         Label lm = new Label();
         Button b1 = new Button("Apply");
         Button b2 = new Button("Cancel");
-
     ScrollTest(String s) {
         super(s);
         setLayout(null);
@@ -21,36 +19,35 @@ class ScrollTest extends Frame{
         p.setLayout(null);
         p.setBounds(10,100,150,260);
         add(p);
-        Label lc = new Label("Choose color");
+            Label lc = new Label("Choose color");
         lc.setBounds(20,0,120,30);
         p.add(lc);
-        Label lmin = new Label("0", Label.RIGHT);
+            Label lmin = new Label("0", Label.RIGHT);
         lmin.setBounds(0,30,30,30);
         p.add(lmin);
-        Label lmiddle =  new Label("127", Label.RIGHT);
+            Label lmiddle =  new Label("127", Label.RIGHT);
         lmiddle.setBounds(0,120,30,30);
         p.add(lmiddle);
-        Label lmax = new Label("225", Label.RIGHT);
+            Label lmax = new Label("225", Label.RIGHT);
         lmax.setBounds(0,200,30,30);
         p.add(lmax);
         sbRed.setBackground(Color.red);
         sbRed.setBounds(40,30,20,200);
-        p.add(sbRed);
+            p.add(sbRed);
         sbGreen.setBackground(Color.green);
         sbGreen.setBounds(70,30,20,200);
-        p.add(sbGreen);
+            p.add(sbGreen);
         sbBlue.setBackground(Color.blue);
         sbBlue.setBounds(100,30,20,200);
-        p.add(sbBlue);
-        Label lp = new Label("Example");
+            p.add(sbBlue);
+            Label lp = new Label("Example");
         lp.setBounds(250,50,120,30);
-        add(lp);
-
+            add(lp);
         lm.setBackground(new Color(127,127,127));
         lm.setBounds(220,80,120,30);
-        add(lm);
+            add(lm);
         b1.setBounds(240, 200, 100, 30);
-        add(b1);
+            add(b1);
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
