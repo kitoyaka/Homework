@@ -62,8 +62,7 @@ public class MainFrame extends JFrame {
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            MainFrame obj = new MainFrame("Курсова");
-            Levers levers = new Levers(" ");
+            Levers levers = new Levers("Курсова");
             levers.leftLever();
         });
     }
