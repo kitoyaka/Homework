@@ -27,13 +27,13 @@ public class MainFrame extends JFrame {
             e.printStackTrace();
             System.out.println("Зображення не знайдено");
         }
-        timer = new Timer(2000, new ActionListener() { //2000 = 2 sec
+        timer = new Timer(2000, new ActionListener() { // 2000 = 2 sec
             @Override
             public void actionPerformed(ActionEvent e) {
-                switchImage = !switchImage; // Переключаем значение для смены изображения
+                switchImage = !switchImage;
                 if (switchImage) {
                     try {
-                        firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverRedOff.png"));//путь до фотки яка нам треба
+                        firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverGreen.jpeg")); // путь до фотки яка нам треба
                     } catch (IOException ex) {
                         ex.printStackTrace();
                         System.out.println("No photo");
