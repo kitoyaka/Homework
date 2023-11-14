@@ -24,7 +24,6 @@ public class Levers extends MainFrame {
                     } catch (IOException ex) {
                         System.out.println("NO PHOTO");
                     }
-
                      timer = new Timer(2000, new ActionListener() { // 2000 = 2 сек
                         @Override
                         public void actionPerformed(ActionEvent e) {
@@ -48,8 +47,8 @@ public class Levers extends MainFrame {
             }
         });
     }
-    ///////////////////////////////
-    ///////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////
     public void rightLever() {
         addMouseListener(new MouseAdapter() {
             @Override
@@ -86,6 +85,4 @@ public class Levers extends MainFrame {
             }
         });
     }
-
-
 }
