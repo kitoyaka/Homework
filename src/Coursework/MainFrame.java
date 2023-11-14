@@ -10,6 +10,7 @@ import javax.swing.*;
 public class MainFrame extends JFrame {
      Image firstStokPicture;
      Image firstLeftLeverRed;
+     Image firstRightLeverRed;
      Timer timer;
      boolean switchImage = false;
 
@@ -64,6 +65,7 @@ public class MainFrame extends JFrame {
         SwingUtilities.invokeLater(() -> {
             Levers levers = new Levers("Курсова");
             levers.leftLever();
+            levers.rightLever();
         });
     }
 }
