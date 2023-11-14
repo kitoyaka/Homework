@@ -28,19 +28,4 @@ public class Levers extends MainFrame {
             }
         });
     }
-    public void rightLever(){
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                int x = e.getX();
-                int y = e.getY();
-                if(x >= 645 && x <= 685 && y >= 140 && y <=215){
-                   try{
-                       firstRightLeverRed = ImageIO.read(new File("photos/"))
-                   }
-                }
-            }
-        });
-    }
-
 }
