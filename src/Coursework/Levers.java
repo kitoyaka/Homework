@@ -5,7 +5,6 @@ import java.io.File;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.JFrame;
 
 public class Levers extends MainFrame {
     Levers(String s) {
@@ -59,7 +58,7 @@ public class Levers extends MainFrame {
                 int y = e.getY();
                 if (x >= 645 && x <= 685 && y >= 140 && y <= 215) {
                     try {
-                        firstRightLeverRed = ImageIO.read(new File("photos/firstRightLeverRed.png"));
+                        firstRightLeverRed = ImageIO.read(new File("photos/firstLeftGreenRightRed.jpeg"));
                         repaint();
                     } catch (IOException ex) {
                         System.out.println("NO PHOTO");
@@ -70,7 +69,7 @@ public class Levers extends MainFrame {
                             switchImageRight = !switchImageRight;
                             if (switchImageRight) {
                                 try {
-                                    firstRightLeverRed = ImageIO.read(new File("photos/firstRightLeverGreen.jpeg"));
+                                    firstRightLeverRed = ImageIO.read(new File("photos/secondStokPhoto.png"));
                                     timer.stop();
                                 } catch (IOException ex) {
                                     ex.printStackTrace();
@@ -86,7 +85,5 @@ public class Levers extends MainFrame {
                 }
             }
         });
-        System.out.println("1");
     }
-
 }
