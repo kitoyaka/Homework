@@ -49,6 +49,7 @@ public class Levers extends MainFrame {
     }
     ////////////////////////////////////////////////////////////////////////////////////////////
 
+
     ////////////////////////////////////////////////////////////////////////////////////////////
     public void rightLever() {
         addMouseListener(new MouseAdapter() {
@@ -85,5 +86,7 @@ public class Levers extends MainFrame {
                 }
             }
         });
+        System.out.println("1");
     }
+
 }
