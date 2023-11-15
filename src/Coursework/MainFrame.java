@@ -12,7 +12,8 @@ public class MainFrame extends JFrame {
      Image firstLeftLeverRed;
      Image firstRightLeverRed;
      Timer timer;
-     boolean switchImage = false;
+     boolean switchImageLeft = false;
+     boolean switchImageRight = false;
 
     MainFrame(String s) {
         super(s);
