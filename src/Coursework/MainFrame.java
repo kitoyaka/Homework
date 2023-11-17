@@ -30,7 +30,6 @@ public class MainFrame extends JFrame {
         }
 
     }
-
     @Override
     public void paint(Graphics g) {
         super.paint(g);
