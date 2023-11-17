@@ -152,5 +152,23 @@ public class Levers extends MainFrame {
                     }
                 }
             });
-        }
+    }
+
+    public void leftCap() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                if (x >= 370 && x <= 405 && y >= 80 && y <= 120) {
+                    try {
+                        secondLeftCapOff = ImageIO.read(new File("photos/secondLeftCapOff.png"));
+                        repaint();
+                    } catch (IOException ex) {
+                        System.out.println("NO PHOTO");
+                    }
+                }
+            }
+        });
+    }
 }
