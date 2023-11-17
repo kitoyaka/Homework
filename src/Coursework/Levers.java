@@ -7,8 +7,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Levers extends MainFrame {
-    private boolean isLeftLeverActivated = false;
-    private boolean isRightLeverActivated = false;
+
     Levers(String s) {
         super(s);
     }
