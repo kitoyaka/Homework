@@ -7,18 +7,18 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Levers extends MainFrame {
-    private boolean isLeftLeverActivated = false;
-    private boolean isRightLeverActivated = false;
+
     Levers(String s) {
         super(s);
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void leftLever() {
             addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     int x = e.getX();
                     int y = e.getY();
-                    if (e.getButton() == MouseEvent.BUTTON1 && x >= 370 && x <= 405 && y >= 140 && y <= 215) {
+                    if (x >= 370 && x <= 405 && y >= 140 && y <= 215) {
                         try {
                             firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverRed.png"));
                             repaint();
@@ -52,7 +52,7 @@ public class Levers extends MainFrame {
                 public void mouseClicked(MouseEvent e) {
                     int x = e.getX();
                     int y = e.getY();
-                    if (e.getButton() == MouseEvent.BUTTON1 && x >= 645 && x <= 685 && y >= 140 && y <= 215) {
+                    if (x >= 645 && x <= 685 && y >= 140 && y <= 215) {
                         try {
                             firstRightLeverRed = ImageIO.read(new File("photos/firstLeftGreenRightRed.jpeg"));
                             repaint();
@@ -83,6 +83,7 @@ public class Levers extends MainFrame {
             });
 
     }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void rightLever() {
             addMouseListener(new MouseAdapter() {
                 @Override
@@ -152,5 +153,74 @@ public class Levers extends MainFrame {
                     }
                 }
             });
-        }
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public void leftCap() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                if (x >= 370 && x <= 405 && y >= 80 && y <= 140) {
+                    try {
+                        secondLeftCapOff = ImageIO.read(new File("photos/secondLeftCapOff.png"));
+                        repaint();
+                    } catch (IOException ex) {
+                        System.out.println("NO PHOTO");
+                    }
+                }
+            }
+
+
+        });
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                if (x >= 645 && x <= 685 && y >= 80 && y <= 140) {
+                    try {;
+                        secondLeftCapOff = ImageIO.read(new File("photos/thirdStokPhoto.png"));
+                        repaint();
+                    } catch (IOException ex) {
+                        System.out.println("NO PHOTO");
+                    }
+                }
+            }
+        });
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public void rightCap() {
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                if (e.getButton() == MouseEvent.BUTTON3 && x >= 645 && x <= 685 && y >= 80 && y <= 140) {
+                    try {;
+                        secondRightCapOff = ImageIO.read(new File("photos/secondRightCapOff.png"));
+                        repaint();
+                    } catch (IOException ex) {
+                        System.out.println("NO PHOTO");
+                    }
+                }
+            }
+        });
+        addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                if (e.getButton() == MouseEvent.BUTTON3 && x >= 370 && x <= 405 && y >= 80 && y <= 140) {
+                    try {
+                        secondRightCapOff = ImageIO.read(new File("photos/thirdStokPhoto.png"));
+                        repaint();
+                    } catch (IOException ex) {
+                        System.out.println("NO PHOTO");
+                    }
+                }
+            }
+        });
+    }
+
 }

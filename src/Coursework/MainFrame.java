@@ -11,6 +11,8 @@ public class MainFrame extends JFrame {
      Image firstStokPicture;
      Image firstLeftLeverRed;
      Image firstRightLeverRed;
+     Image secondLeftCapOff;
+     Image secondRightCapOff;
      Timer timer;
      boolean switchLeftImageLeft = false;
      boolean switchLeftImageRight = false;
@@ -42,12 +44,20 @@ public class MainFrame extends JFrame {
         if(firstRightLeverRed != null){
             g.drawImage(firstRightLeverRed,5,25,this);
         }
+        if(secondLeftCapOff != null){
+            g.drawImage(secondLeftCapOff, 5,25,this);
+        }
+        if(secondRightCapOff != null){
+            g.drawImage(secondRightCapOff,5,25,this);
+        }
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             Levers levers = new Levers("Курсова");
             levers.leftLever();
             levers.rightLever();
+            levers.leftCap();
+            levers.rightCap();
         });
     }
 }
