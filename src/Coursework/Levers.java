@@ -18,7 +18,7 @@ public class Levers extends MainFrame {
                 public void mouseClicked(MouseEvent e) {
                     int x = e.getX();
                     int y = e.getY();
-                    if (e.getButton() == MouseEvent.BUTTON1 && x >= 370 && x <= 405 && y >= 140 && y <= 215) {
+                    if (x >= 370 && x <= 405 && y >= 140 && y <= 215) {
                         try {
                             firstLeftLeverRed = ImageIO.read(new File("photos/firstLeftLeverRed.png"));
                             repaint();
@@ -52,7 +52,7 @@ public class Levers extends MainFrame {
                 public void mouseClicked(MouseEvent e) {
                     int x = e.getX();
                     int y = e.getY();
-                    if (e.getButton() == MouseEvent.BUTTON1 && x >= 645 && x <= 685 && y >= 140 && y <= 215) {
+                    if (x >= 645 && x <= 685 && y >= 140 && y <= 215) {
                         try {
                             firstRightLeverRed = ImageIO.read(new File("photos/firstLeftGreenRightRed.jpeg"));
                             repaint();
