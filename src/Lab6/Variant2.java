@@ -19,18 +19,15 @@ public class Variant2 extends JFrame {
     }
 
     public void paint(Graphics g) {
-        super.paint(g); // Очищаем окно
+        super.paint(g);
 
         try {
-            // Загрузка изображения в BufferedImage
             myPicture = ImageIO.read(new URL("https://i.pinimg.com/564x/d7/12/e8/d712e82c87d68894113dd169629627e2.jpg"));
 
-            // Отображение изображения
             g.drawImage(myPicture, 50, 10, this);
         } catch (IOException e) {
             e.printStackTrace();
 
-            // В случае ошибки отображаем сообщение
             g.setColor(Color.WHITE);
             g.fillRect(0, 0, 355, 300);
             g.setColor(Color.BLACK);
