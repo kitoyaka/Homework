@@ -2,7 +2,6 @@ package Coursework;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
 import javax.swing.*;
@@ -19,8 +18,10 @@ public class MainFrame extends JFrame {
      boolean switchRightImageLeft = false;
      boolean switchRightImageRight = false;
 
-    MainFrame(String s) {
-        super(s);
+//    MainFrame(String s) {
+//        super(s);
+//    }
+    public void drawing(){
         setLayout(null);
         setSize(1024, 800);
         setVisible(true);
@@ -32,7 +33,6 @@ public class MainFrame extends JFrame {
             e.printStackTrace();
             System.out.println("Зображення не знайдено");
         }
-
     }
     @Override
     public void paint(Graphics g) {
@@ -53,7 +53,8 @@ public class MainFrame extends JFrame {
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            Levers levers = new Levers("Курсова");
+            Levers levers = new Levers();
+            levers.drawing();
             levers.leftLever();
             levers.rightLever();
             levers.leftCap();
