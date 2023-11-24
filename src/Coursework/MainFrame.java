@@ -13,6 +13,10 @@ public class MainFrame extends JFrame {
      Image secondLeftCapOff;
      Image secondRightCapOff;
      Image thirdFirstOn;
+     Image thirdFirstSecondOn;
+     Image thirdFirstSecondThirdOn;
+     Image thirdAllOn;
+
      Timer timer;
      boolean switchLeftImageLeft = false;
      boolean switchLeftImageRight = false;
@@ -51,6 +55,15 @@ public class MainFrame extends JFrame {
         if(thirdFirstOn != null){
             g.drawImage(thirdFirstOn,5,25,this);
         }
+        if(thirdFirstSecondOn != null){
+            g.drawImage(thirdFirstSecondOn,5,25,this);
+        }
+        if(thirdFirstSecondThirdOn != null){
+            g.drawImage(thirdFirstSecondThirdOn,5,25,this);
+        }
+        if(thirdAllOn != null){
+            g.drawImage(thirdAllOn,5,25,this);
+        }
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -61,6 +74,9 @@ public class MainFrame extends JFrame {
             levers.leftCap();
             levers.rightCap();
             levers.firstButton();
+            levers.secondButton();
+            levers.thirdButton();
+            levers.fourthButton();
         });
     }
 }
