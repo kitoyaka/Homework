@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 
-public class Caps extends MainFrame {
+public class Caps extends Buttons {
 
 public void leftCap() {
     addMouseListener(new MouseAdapter() {

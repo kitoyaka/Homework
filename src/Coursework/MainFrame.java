@@ -12,15 +12,13 @@ public class MainFrame extends JFrame {
      Image firstRightLeverRed;
      Image secondLeftCapOff;
      Image secondRightCapOff;
+     Image thirdFirstOn;
      Timer timer;
      boolean switchLeftImageLeft = false;
      boolean switchLeftImageRight = false;
      boolean switchRightImageLeft = false;
      boolean switchRightImageRight = false;
 
-//    MainFrame(String s) {
-//        super(s);
-//    }
     public void drawing(){
         setLayout(null);
         setSize(1024, 800);
@@ -50,6 +48,9 @@ public class MainFrame extends JFrame {
         if(secondRightCapOff != null){
             g.drawImage(secondRightCapOff,5,25,this);
         }
+        if(thirdFirstOn != null){
+            g.drawImage(thirdFirstOn,5,25,this);
+        }
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -59,6 +60,7 @@ public class MainFrame extends JFrame {
             levers.rightLever();
             levers.leftCap();
             levers.rightCap();
+            levers.firstButton();
         });
     }
 }
