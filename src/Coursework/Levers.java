@@ -78,8 +78,6 @@ public class Levers extends Caps {
             });
 
     }
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void rightLever() {
             addMouseListener(new MouseAdapter() {
                 @Override
