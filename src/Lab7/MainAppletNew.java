@@ -28,7 +28,7 @@ class ComputeLines implements Runnable {
         while (going) {
             compute();
             try {
-                Thread.sleep(100); // Додаткова затримка для відображення змін
+                Thread.sleep(0); // Додаткова затримка для відображення змін
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -50,7 +50,7 @@ public class MainAppletNew extends JFrame {
 
     public void paint(Graphics g) {
         super.paint(g);
-        g.setColor(Color.green);
+        g.setColor(Color.BLACK);
         g.drawLine(m_lineX1, m_lineX2, m_lineY1, m_lineY2);
     }
 
